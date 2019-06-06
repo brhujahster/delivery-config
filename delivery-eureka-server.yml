@@ -1,7 +1,7 @@
 server:
-  port:9091
-  
- eureka:
+  port: 9091
+
+eureka:
   instance:
     hostname: localhost
   client:
