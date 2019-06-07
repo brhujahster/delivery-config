@@ -12,12 +12,12 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
-  security:
-    oauth2:
-        client:
-            access-token-validity-seconds: 1800
-            authorized-grant-types: password,refresh_token
-            client-id: tceauth
-            client-secret: $2a$10$4CvdsdqhNu/A1ERtlyqOYeSbwnRbL7xCbPclZ7k3o6HvWw0oU3v1u
-            resource-ids: resources
-            scope: read,write
+security:
+   oauth2:
+      client:
+        access-token-validity-seconds: 1800
+        authorized-grant-types: password,refresh_token
+        client-id: tceauth
+        client-secret: $2a$10$4CvdsdqhNu/A1ERtlyqOYeSbwnRbL7xCbPclZ7k3o6HvWw0oU3v1u
+        resource-ids: resources
+        scope: read,write
